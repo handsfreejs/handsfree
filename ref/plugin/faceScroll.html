@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Plugin: faceScroll | Handsfree.js</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Add face, hand, and pose tracking to your projects, create handsfree user experiences, and tap into our growing library of plugins and integrations ✨👌">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://handsfree.js.org/">
+    <meta property="og:image" content="https://i.imgur.com/A9g8rfp.jpg">
+    <meta property="og:title" content="Handsfree.js">
+    <meta property="og:description" content="Add face, hand, and pose tracking to your projects, create handsfree user experiences, and tap into our growing library of plugins and integrations ✨👌">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://i.imgur.com/A9g8rfp.jpg">
+    <meta property="twitter:site" content="@Midiblocks">
+    
+    <link rel="preload" href="/assets/css/0.styles.bb803355.css" as="style"><link rel="preload" href="/assets/js/app.fae53dde.js" as="script"><link rel="preload" href="/assets/js/3.0342f08e.js" as="script"><link rel="preload" href="/assets/js/70.1b7f57a0.js" as="script"><link rel="preload" href="/assets/js/22.ab4f3762.js" as="script"><link rel="preload" href="/assets/js/20.62e72976.js" as="script"><link rel="preload" href="/assets/js/19.5a90037f.js" as="script"><link rel="preload" href="/assets/js/21.5fd56aec.js" as="script"><link rel="preload" href="/assets/js/17.1f759e5b.js" as="script"><link rel="preload" href="/assets/js/24.2ec3eba9.js" as="script"><link rel="prefetch" href="/assets/js/1.19e08562.js"><link rel="prefetch" href="/assets/js/10.e85b568e.js"><link rel="prefetch" href="/assets/js/11.93131074.js"><link rel="prefetch" href="/assets/js/12.29d43d31.js"><link rel="prefetch" href="/assets/js/13.a0da0708.js"><link rel="prefetch" href="/assets/js/14.b26bb1fd.js"><link rel="prefetch" href="/assets/js/15.e25b9887.js"><link rel="prefetch" href="/assets/js/16.875d5fc4.js"><link rel="prefetch" href="/assets/js/18.71e20aec.js"><link rel="prefetch" href="/assets/js/23.72256071.js"><link rel="prefetch" href="/assets/js/25.aca0a2f1.js"><link rel="prefetch" href="/assets/js/26.0f371895.js"><link rel="prefetch" href="/assets/js/27.c7c9ac2c.js"><link rel="prefetch" href="/assets/js/28.739bc881.js"><link rel="prefetch" href="/assets/js/29.7ffc3919.js"><link rel="prefetch" href="/assets/js/30.c736f368.js"><link rel="prefetch" href="/assets/js/31.03dbac13.js"><link rel="prefetch" href="/assets/js/32.c2be5fdd.js"><link rel="prefetch" href="/assets/js/33.0814e16e.js"><link rel="prefetch" href="/assets/js/34.14c59e77.js"><link rel="prefetch" href="/assets/js/35.ead560e9.js"><link rel="prefetch" href="/assets/js/36.fedf7955.js"><link rel="prefetch" href="/assets/js/37.34992b25.js"><link rel="prefetch" href="/assets/js/38.f7e85558.js"><link rel="prefetch" href="/assets/js/39.95c0b706.js"><link rel="prefetch" href="/assets/js/4.93a9be36.js"><link rel="prefetch" href="/assets/js/40.49b4d77f.js"><link rel="prefetch" href="/assets/js/41.dfd4729f.js"><link rel="prefetch" href="/assets/js/42.facce00e.js"><link rel="prefetch" href="/assets/js/43.67601436.js"><link rel="prefetch" href="/assets/js/44.b99a8e8c.js"><link rel="prefetch" href="/assets/js/45.d139cf81.js"><link rel="prefetch" href="/assets/js/46.8148a313.js"><link rel="prefetch" href="/assets/js/47.c1379a3b.js"><link rel="prefetch" href="/assets/js/48.40fecd4e.js"><link rel="prefetch" href="/assets/js/49.6275f3ab.js"><link rel="prefetch" href="/assets/js/5.4df13f07.js"><link rel="prefetch" href="/assets/js/50.552e04d4.js"><link rel="prefetch" href="/assets/js/51.da60e03b.js"><link rel="prefetch" href="/assets/js/52.06699b70.js"><link rel="prefetch" href="/assets/js/53.e8d2e257.js"><link rel="prefetch" href="/assets/js/54.a66d9cd3.js"><link rel="prefetch" href="/assets/js/55.543ee5fe.js"><link rel="prefetch" href="/assets/js/56.361968e6.js"><link rel="prefetch" href="/assets/js/57.d7ff4d13.js"><link rel="prefetch" href="/assets/js/58.799b0ee3.js"><link rel="prefetch" href="/assets/js/59.e45aa962.js"><link rel="prefetch" href="/assets/js/6.d9f1c8c7.js"><link rel="prefetch" href="/assets/js/60.f40b4b0e.js"><link rel="prefetch" href="/assets/js/61.e1033a56.js"><link rel="prefetch" href="/assets/js/62.22832c8e.js"><link rel="prefetch" href="/assets/js/63.01d9f2fb.js"><link rel="prefetch" href="/assets/js/64.ecc366e0.js"><link rel="prefetch" href="/assets/js/65.48a9dde2.js"><link rel="prefetch" href="/assets/js/66.6b2a3bdf.js"><link rel="prefetch" href="/assets/js/67.4dd32346.js"><link rel="prefetch" href="/assets/js/68.70553bf2.js"><link rel="prefetch" href="/assets/js/69.68dd2048.js"><link rel="prefetch" href="/assets/js/7.f1f145bf.js"><link rel="prefetch" href="/assets/js/71.5b4b0235.js"><link rel="prefetch" href="/assets/js/72.580a1d36.js"><link rel="prefetch" href="/assets/js/73.22e13107.js"><link rel="prefetch" href="/assets/js/74.2b3cbd4b.js"><link rel="prefetch" href="/assets/js/75.770c9269.js"><link rel="prefetch" href="/assets/js/76.116a3ffa.js"><link rel="prefetch" href="/assets/js/77.b56b82ea.js"><link rel="prefetch" href="/assets/js/78.7112d69b.js"><link rel="prefetch" href="/assets/js/79.e087e5a2.js"><link rel="prefetch" href="/assets/js/8.ef49b7c9.js"><link rel="prefetch" href="/assets/js/80.987b58cd.js"><link rel="prefetch" href="/assets/js/81.2cb91f05.js"><link rel="prefetch" href="/assets/js/82.546d352e.js"><link rel="prefetch" href="/assets/js/83.dfd03acd.js"><link rel="prefetch" href="/assets/js/84.4907663d.js"><link rel="prefetch" href="/assets/js/85.3b1ee045.js"><link rel="prefetch" href="/assets/js/9.ee58480d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bb803355.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/branding/handsfree.png" alt="Handsfree.js" class="logo"> <span class="site-name can-hide">Handsfree.js</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/midiblocks/handsfree" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/midiblocks/handsfree" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">🏠 Home</a></li><li><section class="sidebar-group depth-0"><a href="/ref/model/" class="sidebar-heading clickable"><span>📦 Models</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ref/model/hands.html" class="sidebar-link">🖐 Hands (2D)</a></li><li><a href="/ref/model/handpose.html" class="sidebar-link">🖐 Handpose (3D)</a></li><li><a href="/ref/model/facemesh.html" class="sidebar-link">😏 FaceMesh</a></li><li><a href="/ref/model/pose.html" class="sidebar-link">🤸‍♀️ Pose</a></li><li><a href="/ref/model/weboji.html" class="sidebar-link">😉 Weboji</a></li></ul></section></li><li><a href="/gesture/" class="sidebar-link">🖖 Create Gestures</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/example/" class="sidebar-heading clickable"><span>🎮 Examples</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/guide/" class="sidebar-heading clickable"><span>📋 Guides</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/ref/" class="sidebar-heading clickable router-link-active open"><span>📚 Reference</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/event/" class="sidebar-heading clickable"><span>⚡ Events</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/method/" class="sidebar-heading clickable"><span>💻 Methods</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/plugin/" class="sidebar-heading clickable router-link-active open"><span>🔌 Plugins</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ref/plugin/faceClick.html" class="sidebar-link">faceClick</a></li><li><a href="/ref/plugin/facePointer.html" class="sidebar-link">facePointer</a></li><li><a href="/ref/plugin/faceScroll.html" aria-current="page" class="active sidebar-link">faceScroll</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ref/plugin/faceScroll.html#config" class="sidebar-link">Config</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ref/plugin/faceScroll.html#during-instantiation" class="sidebar-link">During instantiation</a></li><li class="sidebar-sub-header"><a href="/ref/plugin/faceScroll.html#after-instantiation" class="sidebar-link">After instantiation</a></li></ul></li><li class="sidebar-sub-header"><a href="/ref/plugin/faceScroll.html#full-plugin-code" class="sidebar-link">Full plugin code</a></li></ul></li><li><a href="/ref/plugin/palmPointers.html" class="sidebar-link">palmPointers</a></li><li><a href="/ref/plugin/pinchers.html" class="sidebar-link">pinchers</a></li><li><a href="/ref/plugin/pinchScroll.html" class="sidebar-link">pinchScroll</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/prop/" class="sidebar-heading clickable"><span>🧬 Properties</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/util/" class="sidebar-heading clickable"><span>🧰 Utilities</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/community/" class="sidebar-heading clickable"><span>🤝 Community</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/about/" class="sidebar-link">About</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="plugin-facescroll"><a href="#plugin-facescroll" class="header-anchor">#</a> Plugin: faceScroll</h1> <div class="window mb-md"><div class="window-body"><div class="row"><div class="col-6"><img src="https://media0.giphy.com/media/Iv2aSMS0QTy2P5JNCX/giphy.gif"></div> <div class="col-6"><ul><li>Move <a href="/ref/plugin/facePointer/">facePointer</a> above or below a scroll area to scroll in that direction</li> <li>Hover over scroll areas to focus it</li> <li>Adjust focus time and scroll zones and speeds</li> <li><strong>Tags:</strong> <code>['browser']</code></li></ul> <div><div class="block-children full-width handsfree-hide-when-started-without-weboji"><button class="handsfree-show-when-stopped handsfree-hide-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-video fa-w-18"><path fill="currentColor" d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg></span><span>Try faceScroll</span></button><button disabled="disabled" class="handsfree-show-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg></span><span>Loading...</span></button><button class="handsfree-hide-when-loading handsfree-show-when-started negative"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-video-slash fa-w-20"><path fill="currentColor" d="M633.8 458.1l-55-42.5c15.4-1.4 29.2-13.7 29.2-31.1v-257c0-25.5-29.1-40.4-50.4-25.8L448 177.3v137.2l-32-24.7v-178c0-26.4-21.4-47.8-47.8-47.8H123.9L45.5 3.4C38.5-2 28.5-.8 23 6.2L3.4 31.4c-5.4 7-4.2 17 2.8 22.4L42.7 82 416 370.6l178.5 138c7 5.4 17 4.2 22.5-2.8l19.6-25.3c5.5-6.9 4.2-17-2.8-22.4zM32 400.2c0 26.4 21.4 47.8 47.8 47.8h288.4c11.2 0 21.4-4 29.6-10.5L32 154.7v245.5z"></path></svg></span><span>Stop Weboji</span></button></div> <button disabled="disabled" class="handsfree-show-when-started-without-weboji handsfree-show-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg></span> Loading...</button> <button class="handsfree-show-when-started-without-weboji handsfree-hide-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-video fa-w-18"><path fill="currentColor" d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg></span> Try faceScroll</button></div></div></div></div></div> <blockquote><p><strong>Models:</strong> <a href="/ref/model/weboji/">Jeeliz Weboji</a></p> <p><strong>Activate:</strong> <code>handsfree.plugin.faceScroll.enable()</code></p> <p><strong>Tags:</strong> <code>['browser']</code></p> <p><strong>About:</strong> This plugin is used in combination with the <a href="/ref/plugin/facePointer/">facePointer</a> to help you scroll pages with head movements.</p></blockquote> <h2 id="config"><a href="#config" class="header-anchor">#</a> Config</h2> <h3 id="during-instantiation"><a href="#during-instantiation" class="header-anchor">#</a> During instantiation</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> handsfree <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Handsfree</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  weboji<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+  plugin<span class="token operator">:</span> <span class="token punctuation">{</span>
+    faceScroll<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Number of frames over the same element before activating that element</span>
+      framesToFocus<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+
+      vertScroll<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The multiplier to scroll by. Lower numbers are slower</span>
+        scrollSpeed<span class="token operator">:</span> <span class="token number">0.15</span><span class="token punctuation">,</span>
+        <span class="token comment">// How many pixels from the top/bottom of the scroll area to scroll</span>
+        scrollZone<span class="token operator">:</span> <span class="token number">100</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="after-instantiation"><a href="#after-instantiation" class="header-anchor">#</a> After instantiation</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Require 100ms to focus that element</span>
+handsfree<span class="token punctuation">.</span>plugin<span class="token punctuation">.</span>faceScroll<span class="token punctuation">.</span>config<span class="token punctuation">.</span>framesToFocus <span class="token operator">=</span> <span class="token number">100</span>
+
+<span class="token comment">// Require that the pointer moves way above or way below the scroll area</span>
+handsfree<span class="token punctuation">.</span>plugin<span class="token punctuation">.</span>faceScroll<span class="token punctuation">.</span>config<span class="token punctuation">.</span>offset<span class="token punctuation">.</span>yaw <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">100</span>
+</code></pre></div><h2 id="full-plugin-code"><a href="#full-plugin-code" class="header-anchor">#</a> Full plugin code</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> throttle <span class="token keyword">from</span> <span class="token string">'lodash/throttle'</span>
+
+<span class="token comment">/**
+ * Scrolls the page vertically
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  models<span class="token operator">:</span> <span class="token string">'weboji'</span><span class="token punctuation">,</span>
+  enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  tags<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'browser'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Number of frames the current element is the same as the last</span>
+  numFramesFocused<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token comment">// The last scrollable target focused</span>
+  $lastTarget<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token comment">// The current scrollable target</span>
+  $target<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+  config<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Number of frames over the same element before activating that element</span>
+    framesToFocus<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+
+    vertScroll<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// The multiplier to scroll by. Lower numbers are slower</span>
+      scrollSpeed<span class="token operator">:</span> <span class="token number">0.05</span><span class="token punctuation">,</span>
+      <span class="token comment">// How many pixels from the top/bottom of the scroll area to scroll</span>
+      scrollZone<span class="token operator">:</span> <span class="token number">100</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">onUse</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$target <span class="token operator">=</span> window
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Scroll the page when the cursor goes above/below the threshold
+   */</span>
+  <span class="token function">onFrame</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>weboji<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// @FIXME we shouldn't need to do this, but this is occasionally reset to {x: 0, y: 0} when running in client mode</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>x <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y<span class="token punctuation">)</span> <span class="token keyword">return</span>
+
+    <span class="token comment">// Check for hover</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">checkForFocus</span><span class="token punctuation">(</span>weboji<span class="token punctuation">)</span>
+    <span class="token keyword">let</span> isScrolling <span class="token operator">=</span> <span class="token boolean">false</span>
+
+    <span class="token comment">// Get bounds</span>
+    <span class="token keyword">let</span> bounds
+    <span class="token keyword">let</span> scrollTop <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTargetScrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span>getBoundingClientRect<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      bounds <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      bounds <span class="token operator">=</span> <span class="token punctuation">{</span> top<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> bottom<span class="token operator">:</span> window<span class="token punctuation">.</span>innerHeight <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Check on click</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>state <span class="token operator">===</span> <span class="token string">'mouseDown'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>numFramesFocused <span class="token operator">=</span> <span class="token number">0</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">maybeSetTarget</span><span class="token punctuation">(</span>weboji<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Scroll up</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y <span class="token operator">&lt;</span> bounds<span class="token punctuation">.</span>top <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollZone<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span>
+        <span class="token number">0</span><span class="token punctuation">,</span>
+        scrollTop <span class="token operator">+</span>
+          <span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y <span class="token operator">-</span> bounds<span class="token punctuation">.</span>top <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollZone<span class="token punctuation">)</span> <span class="token operator">*</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed
+      <span class="token punctuation">)</span>
+
+      isScrolling <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Scroll down</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y <span class="token operator">&gt;</span> bounds<span class="token punctuation">.</span>bottom <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollZone<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span>
+        <span class="token number">0</span><span class="token punctuation">,</span>
+        scrollTop <span class="token operator">-</span>
+          <span class="token punctuation">(</span>bounds<span class="token punctuation">.</span>bottom <span class="token operator">-</span>
+            weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y <span class="token operator">-</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollZone<span class="token punctuation">)</span> <span class="token operator">*</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed
+      <span class="token punctuation">)</span>
+
+      isScrolling <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+
+    isScrolling <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">maybeSelectNewTarget</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Check that the scroll is actually happening, otherwise traverse up the DOM
+   */</span>
+  <span class="token function">maybeSelectNewTarget</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> curScrollTop <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTargetScrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> didNotScroll <span class="token operator">=</span> <span class="token boolean">false</span>
+
+    <span class="token comment">// Check if we have scrolled up</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> curScrollTop <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>curScrollTop <span class="token operator">===</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTargetScrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      didNotScroll <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> curScrollTop <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed<span class="token punctuation">)</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Check if we have scrolled down</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> curScrollTop <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>curScrollTop <span class="token operator">===</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getTargetScrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>didNotScroll<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>numFramesFocused <span class="token operator">=</span> <span class="token number">0</span>
+
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectTarget</span><span class="token punctuation">(</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">recursivelyFindScrollbar</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span>parentElement<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span><span class="token function">scrollTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> curScrollTop <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>vertScroll<span class="token punctuation">.</span>scrollSpeed<span class="token punctuation">)</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Gets the scrolltop, taking account the window object
+   */</span>
+  <span class="token function">getTargetScrollTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token operator">?.</span>scrollY <span class="token operator">||</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token operator">?.</span>scrollTop <span class="token operator">||</span> <span class="token number">0</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Checks to see if we've hovered over an element for x turns
+   */</span>
+  checkForFocus<span class="token operator">:</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">weboji</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> $potTarget <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">elementFromPoint</span><span class="token punctuation">(</span>
+      weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>x<span class="token punctuation">,</span>
+      weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>y
+    <span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>$potTarget<span class="token punctuation">)</span> <span class="token keyword">return</span>
+    $potTarget <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">recursivelyFindScrollbar</span><span class="token punctuation">(</span>$potTarget<span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>$potTarget <span class="token operator">===</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$lastTarget<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token operator">++</span><span class="token keyword">this</span><span class="token punctuation">.</span>numFramesFocused
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>numFramesFocused <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>numFramesFocused <span class="token operator">&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>config<span class="token punctuation">.</span>framesToFocus<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectTarget</span><span class="token punctuation">(</span>$potTarget<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$lastTarget <span class="token operator">=</span> $potTarget
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Select and style the element
+   */</span>
+  <span class="token function">selectTarget</span><span class="token punctuation">(</span><span class="token parameter">$potTarget</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Check required in case the window is the target</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span>classList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$target<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'handsfree-scroll-focus'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>$potTarget <span class="token operator">&amp;&amp;</span> $potTarget<span class="token punctuation">.</span>classList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      $potTarget<span class="token punctuation">.</span>classList<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'handsfree-scroll-focus'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>$potTarget<span class="token punctuation">.</span>nodeName <span class="token operator">===</span> <span class="token string">'HTML'</span> <span class="token operator">||</span> <span class="token operator">!</span>$potTarget<span class="token punctuation">.</span>nodeName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      $potTarget <span class="token operator">=</span> window
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$target <span class="token operator">=</span> $potTarget
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Sets a new scroll target on click
+   */</span>
+  <span class="token function">maybeSetTarget</span><span class="token punctuation">(</span><span class="token parameter">weboji</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>state <span class="token operator">===</span> <span class="token string">'mouseDown'</span> <span class="token operator">&amp;&amp;</span> weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>$target<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">selectTarget</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">recursivelyFindScrollbar</span><span class="token punctuation">(</span>weboji<span class="token punctuation">.</span>pointer<span class="token punctuation">.</span>$target<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * Traverses up the DOM until a scrollbar is found, or until we hit the body/window
+   */</span>
+  <span class="token function">recursivelyFindScrollbar</span><span class="token punctuation">(</span><span class="token parameter">$target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> styles <span class="token operator">=</span>
+      $target <span class="token operator">&amp;&amp;</span> $target<span class="token punctuation">.</span>getBoundingClientRect <span class="token operator">?</span> <span class="token function">getComputedStyle</span><span class="token punctuation">(</span>$target<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      $target <span class="token operator">&amp;&amp;</span>
+      $target<span class="token punctuation">.</span>scrollHeight <span class="token operator">&gt;</span> $target<span class="token punctuation">.</span>clientHeight <span class="token operator">&amp;&amp;</span>
+      <span class="token punctuation">(</span>styles<span class="token punctuation">.</span>overflow <span class="token operator">===</span> <span class="token string">'auto'</span> <span class="token operator">||</span>
+        styles<span class="token punctuation">.</span>overflow <span class="token operator">===</span> <span class="token string">'auto scroll'</span> <span class="token operator">||</span>
+        styles<span class="token punctuation">.</span>overflowY <span class="token operator">===</span> <span class="token string">'auto'</span> <span class="token operator">||</span>
+        styles<span class="token punctuation">.</span>overflowY <span class="token operator">===</span> <span class="token string">'auto scroll'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> $target
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>$target <span class="token operator">&amp;&amp;</span> $target<span class="token punctuation">.</span>parentElement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">recursivelyFindScrollbar</span><span class="token punctuation">(</span>$target<span class="token punctuation">.</span>parentElement<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> window
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/midiblocks/handsfree/edit/master/docs/ref/plugin/faceScroll.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/9/2021, 10:09:45 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ref/plugin/facePointer.html" class="prev">
+        facePointer
+      </a></span> <span class="next"><a href="/ref/plugin/palmPointers.html">
+        palmPointers
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div id="handsfree-container"><div id="handsfree-debugger"></div><div id="navbar-handsfree-toggle"><a href="https://github.com/midiblocks/handsfree"><img src="/branding/github.png" height="28" style="vertical-align: middle"></a><div class="block-children handsfree-show-when-started"><button class="handsfree-show-when-stopped handsfree-hide-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-video fa-w-18"><path fill="currentColor" d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg></span><span>Activate Handsfree Mode</span></button><button disabled="disabled" class="handsfree-show-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg></span><span>Loading...</span></button><button class="handsfree-hide-when-loading handsfree-show-when-started negative"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-video-slash fa-w-20"><path fill="currentColor" d="M633.8 458.1l-55-42.5c15.4-1.4 29.2-13.7 29.2-31.1v-257c0-25.5-29.1-40.4-50.4-25.8L448 177.3v137.2l-32-24.7v-178c0-26.4-21.4-47.8-47.8-47.8H123.9L45.5 3.4C38.5-2 28.5-.8 23 6.2L3.4 31.4c-5.4 7-4.2 17 2.8 22.4L42.7 82 416 370.6l178.5 138c7 5.4 17 4.2 22.5-2.8l19.6-25.3c5.5-6.9 4.2-17-2.8-22.4zM32 400.2c0 26.4 21.4 47.8 47.8 47.8h288.4c11.2 0 21.4-4 29.6-10.5L32 154.7v245.5z"></path></svg></span><span>Stop Handsfree</span></button></div></div><div id="handsfree-debug-window" class="window window-component mb-md handsfree-show-when-started handsfree-hide-when-not-debugging mb-0"><div class="title-bar"><div class="title-bar-text">Debugger</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Restore"></button><button aria-label="Maximize"></button></div></div><div class="window-body"></div></div></div></div></div>
+    <script src="/assets/js/app.fae53dde.js" defer></script><script src="/assets/js/3.0342f08e.js" defer></script><script src="/assets/js/70.1b7f57a0.js" defer></script><script src="/assets/js/22.ab4f3762.js" defer></script><script src="/assets/js/20.62e72976.js" defer></script><script src="/assets/js/19.5a90037f.js" defer></script><script src="/assets/js/21.5fd56aec.js" defer></script><script src="/assets/js/17.1f759e5b.js" defer></script><script src="/assets/js/24.2ec3eba9.js" defer></script>
+  </body>
+</html>

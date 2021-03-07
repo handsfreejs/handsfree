@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prop: handsfree.config | Handsfree.js</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.png">
+    <meta name="description" content="Add face, hand, and pose tracking to your projects, create handsfree user experiences, and tap into our growing library of plugins and integrations ✨👌">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://handsfree.js.org/">
+    <meta property="og:image" content="https://i.imgur.com/A9g8rfp.jpg">
+    <meta property="og:title" content="Handsfree.js">
+    <meta property="og:description" content="Add face, hand, and pose tracking to your projects, create handsfree user experiences, and tap into our growing library of plugins and integrations ✨👌">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://i.imgur.com/A9g8rfp.jpg">
+    <meta property="twitter:site" content="@Midiblocks">
+    
+    <link rel="preload" href="/assets/css/0.styles.bb803355.css" as="style"><link rel="preload" href="/assets/js/app.fae53dde.js" as="script"><link rel="preload" href="/assets/js/3.0342f08e.js" as="script"><link rel="preload" href="/assets/js/74.2b3cbd4b.js" as="script"><link rel="preload" href="/assets/js/17.1f759e5b.js" as="script"><link rel="preload" href="/assets/js/22.ab4f3762.js" as="script"><link rel="preload" href="/assets/js/20.62e72976.js" as="script"><link rel="preload" href="/assets/js/19.5a90037f.js" as="script"><link rel="preload" href="/assets/js/21.5fd56aec.js" as="script"><link rel="preload" href="/assets/js/24.2ec3eba9.js" as="script"><link rel="prefetch" href="/assets/js/1.19e08562.js"><link rel="prefetch" href="/assets/js/10.e85b568e.js"><link rel="prefetch" href="/assets/js/11.93131074.js"><link rel="prefetch" href="/assets/js/12.29d43d31.js"><link rel="prefetch" href="/assets/js/13.a0da0708.js"><link rel="prefetch" href="/assets/js/14.b26bb1fd.js"><link rel="prefetch" href="/assets/js/15.e25b9887.js"><link rel="prefetch" href="/assets/js/16.875d5fc4.js"><link rel="prefetch" href="/assets/js/18.71e20aec.js"><link rel="prefetch" href="/assets/js/23.72256071.js"><link rel="prefetch" href="/assets/js/25.aca0a2f1.js"><link rel="prefetch" href="/assets/js/26.0f371895.js"><link rel="prefetch" href="/assets/js/27.c7c9ac2c.js"><link rel="prefetch" href="/assets/js/28.739bc881.js"><link rel="prefetch" href="/assets/js/29.7ffc3919.js"><link rel="prefetch" href="/assets/js/30.c736f368.js"><link rel="prefetch" href="/assets/js/31.03dbac13.js"><link rel="prefetch" href="/assets/js/32.c2be5fdd.js"><link rel="prefetch" href="/assets/js/33.0814e16e.js"><link rel="prefetch" href="/assets/js/34.14c59e77.js"><link rel="prefetch" href="/assets/js/35.ead560e9.js"><link rel="prefetch" href="/assets/js/36.fedf7955.js"><link rel="prefetch" href="/assets/js/37.34992b25.js"><link rel="prefetch" href="/assets/js/38.f7e85558.js"><link rel="prefetch" href="/assets/js/39.95c0b706.js"><link rel="prefetch" href="/assets/js/4.93a9be36.js"><link rel="prefetch" href="/assets/js/40.49b4d77f.js"><link rel="prefetch" href="/assets/js/41.dfd4729f.js"><link rel="prefetch" href="/assets/js/42.facce00e.js"><link rel="prefetch" href="/assets/js/43.67601436.js"><link rel="prefetch" href="/assets/js/44.b99a8e8c.js"><link rel="prefetch" href="/assets/js/45.d139cf81.js"><link rel="prefetch" href="/assets/js/46.8148a313.js"><link rel="prefetch" href="/assets/js/47.c1379a3b.js"><link rel="prefetch" href="/assets/js/48.40fecd4e.js"><link rel="prefetch" href="/assets/js/49.6275f3ab.js"><link rel="prefetch" href="/assets/js/5.4df13f07.js"><link rel="prefetch" href="/assets/js/50.552e04d4.js"><link rel="prefetch" href="/assets/js/51.da60e03b.js"><link rel="prefetch" href="/assets/js/52.06699b70.js"><link rel="prefetch" href="/assets/js/53.e8d2e257.js"><link rel="prefetch" href="/assets/js/54.a66d9cd3.js"><link rel="prefetch" href="/assets/js/55.543ee5fe.js"><link rel="prefetch" href="/assets/js/56.361968e6.js"><link rel="prefetch" href="/assets/js/57.d7ff4d13.js"><link rel="prefetch" href="/assets/js/58.799b0ee3.js"><link rel="prefetch" href="/assets/js/59.e45aa962.js"><link rel="prefetch" href="/assets/js/6.d9f1c8c7.js"><link rel="prefetch" href="/assets/js/60.f40b4b0e.js"><link rel="prefetch" href="/assets/js/61.e1033a56.js"><link rel="prefetch" href="/assets/js/62.22832c8e.js"><link rel="prefetch" href="/assets/js/63.01d9f2fb.js"><link rel="prefetch" href="/assets/js/64.ecc366e0.js"><link rel="prefetch" href="/assets/js/65.48a9dde2.js"><link rel="prefetch" href="/assets/js/66.6b2a3bdf.js"><link rel="prefetch" href="/assets/js/67.4dd32346.js"><link rel="prefetch" href="/assets/js/68.70553bf2.js"><link rel="prefetch" href="/assets/js/69.68dd2048.js"><link rel="prefetch" href="/assets/js/7.f1f145bf.js"><link rel="prefetch" href="/assets/js/70.1b7f57a0.js"><link rel="prefetch" href="/assets/js/71.5b4b0235.js"><link rel="prefetch" href="/assets/js/72.580a1d36.js"><link rel="prefetch" href="/assets/js/73.22e13107.js"><link rel="prefetch" href="/assets/js/75.770c9269.js"><link rel="prefetch" href="/assets/js/76.116a3ffa.js"><link rel="prefetch" href="/assets/js/77.b56b82ea.js"><link rel="prefetch" href="/assets/js/78.7112d69b.js"><link rel="prefetch" href="/assets/js/79.e087e5a2.js"><link rel="prefetch" href="/assets/js/8.ef49b7c9.js"><link rel="prefetch" href="/assets/js/80.987b58cd.js"><link rel="prefetch" href="/assets/js/81.2cb91f05.js"><link rel="prefetch" href="/assets/js/82.546d352e.js"><link rel="prefetch" href="/assets/js/83.dfd03acd.js"><link rel="prefetch" href="/assets/js/84.4907663d.js"><link rel="prefetch" href="/assets/js/85.3b1ee045.js"><link rel="prefetch" href="/assets/js/9.ee58480d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bb803355.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/branding/handsfree.png" alt="Handsfree.js" class="logo"> <span class="site-name can-hide">Handsfree.js</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/midiblocks/handsfree" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/midiblocks/handsfree" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">🏠 Home</a></li><li><section class="sidebar-group depth-0"><a href="/ref/model/" class="sidebar-heading clickable"><span>📦 Models</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ref/model/hands.html" class="sidebar-link">🖐 Hands (2D)</a></li><li><a href="/ref/model/handpose.html" class="sidebar-link">🖐 Handpose (3D)</a></li><li><a href="/ref/model/facemesh.html" class="sidebar-link">😏 FaceMesh</a></li><li><a href="/ref/model/pose.html" class="sidebar-link">🤸‍♀️ Pose</a></li><li><a href="/ref/model/weboji.html" class="sidebar-link">😉 Weboji</a></li></ul></section></li><li><a href="/gesture/" class="sidebar-link">🖖 Create Gestures</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/example/" class="sidebar-heading clickable"><span>🎮 Examples</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/guide/" class="sidebar-heading clickable"><span>📋 Guides</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/ref/" class="sidebar-heading clickable router-link-active open"><span>📚 Reference</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/event/" class="sidebar-heading clickable"><span>⚡ Events</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/method/" class="sidebar-heading clickable"><span>💻 Methods</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/plugin/" class="sidebar-heading clickable"><span>🔌 Plugins</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/prop/" class="sidebar-heading clickable router-link-active open"><span>🧬 Properties</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/ref/prop/config.html" aria-current="page" class="active sidebar-link">.config</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/ref/prop/config.html#setup" class="sidebar-link">Setup</a></li><li class="sidebar-sub-header"><a href="/ref/prop/config.html#models" class="sidebar-link">Models</a></li><li class="sidebar-sub-header"><a href="/ref/prop/config.html#plugins" class="sidebar-link">Plugins</a></li><li class="sidebar-sub-header"><a href="/ref/prop/config.html#the-full-list" class="sidebar-link">The Full List</a></li></ul></li><li><a href="/ref/prop/data.html" class="sidebar-link">.data</a></li><li><a href="/ref/prop/debug.html" class="sidebar-link">.debug</a></li><li><a href="/ref/prop/id.html" class="sidebar-link">.id</a></li><li><a href="/ref/prop/isLooping.html" class="sidebar-link">.isLooping</a></li><li><a href="/ref/prop/model.html" class="sidebar-link">.model</a></li><li><a href="/ref/prop/plugin.html" class="sidebar-link">.plugin</a></li><li><a href="/ref/prop/taggedPlugins.html" class="sidebar-link">.taggedPlugins</a></li><li><a href="/ref/prop/version.html" class="sidebar-link">.version</a></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/ref/util/" class="sidebar-heading clickable"><span>🧰 Utilities</span> <span class="arrow right"></span></a> <!----></section></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/community/" class="sidebar-heading clickable"><span>🤝 Community</span> <span class="arrow right"></span></a> <!----></section></li><li><a href="/about/" class="sidebar-link">About</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="prop-handsfree-config"><a href="#prop-handsfree-config" class="header-anchor">#</a> Prop: <code>handsfree.config</code></h1> <p>Contains a sanitized copy of the object you instantiated Handsfree with:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">const</span> handsfree <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Handsfree</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+
+<span class="token comment">// Since you passed an empty object, this will contain all the defaults</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>handsfree<span class="token punctuation">.</span>config<span class="token punctuation">)</span>
+</code></pre></div><p>The sanitization process simply adds default values for any options you specifically did not provide. Passing an empty object will result in <code>handsfree.config</code> having all the defaults <a href="#the-full-list">listed below</a>. The recommended way to update this config is with <a href="/ref/method/update/">handsfree.update</a></p> <h2 id="setup"><a href="#setup" class="header-anchor">#</a> Setup</h2> <h3 id="assetspath"><a href="#assetspath" class="header-anchor">#</a> <code>.assetsPath</code></h3> <p><strong>Default</strong>: <code>https://unpkg.com/handsfree@8.4.3/build/lib/assets</code></p> <p>In order to keep page loads snappy the models are loaded only when needed, and because Handsfree.js is designed to power webapps they are hosted on a CDN. However, you can click here to <a href="https://github.com/MIDIBlocks/handsfree/archive/master.zip" target="_blank" rel="noopener noreferrer">download a zip file containing the models<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and copy over the <code>/build/lib/assets/</code> folder into your projects public folder to host them yourself.</p> <p>With your models extracted, set the <code>assetsPath</code> to your folder:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> handsfree <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Handsfree</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  weboji<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  assetsPath<span class="token operator">:</span> <span class="token string">'/my/public/assets/'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+handsfree<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>If there's an error, a <a href="/ref/event/modelError/">modelError event</a> will be triggered and along with console message which you can use to zero in on the correct folder.</p> <h3 id="isclient"><a href="#isclient" class="header-anchor">#</a> <code>.isClient</code></h3> <p><strong>Default:</strong> <code>false</code></p> <p>Setting this to <code>true</code> will cause Handsfree.js to only load the plugins, and disables the loop. This is useful for when you want to run computer vision on another device or context, but run the plugins on the current device or context.</p> <p>A common use case is to run Handsfree.js in the browser and stream the data to the desktop via websockets, for example, to control the desktop mouse pointer. Another use case is to run Handsfree.js plugins on a low powered device while running the models externally on a device with a GPU.</p> <p>You'll need to manually call <a href="/ref/method/runPlugins/">handsfree.runPlugins(data)</a> on the local device/context on each frame as there will be no loop.</p> <h3 id="setup-canvas-modelname"><a href="#setup-canvas-modelname" class="header-anchor">#</a> <code>.setup.canvas[modelName]</code></h3> <p><strong>Default</strong>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// The canvas element to hold the skeletons and keypoints</span>
+  <span class="token comment">// - Will automatically get created and injected into .setup.wrap if null</span>
+  $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// These are currently automatically set</span>
+  <span class="token comment">// width: 1280,</span>
+  <span class="token comment">// height: 720</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="setup-video"><a href="#setup-video" class="header-anchor">#</a> <code>.setup.video</code></h3> <p><strong>Default</strong>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// The video element to hold the webcam stream</span>
+  <span class="token comment">// - Will automatically get created and injected into .setup.wrap if null</span>
+  $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// These are currently automatically set by the model (see the model config)</span>
+  <span class="token comment">// width: 1280,</span>
+  <span class="token comment">// height: 720</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="setup-wrap"><a href="#setup-wrap" class="header-anchor">#</a> <code>.setup.wrap</code></h3> <p><strong>Default</strong>:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token comment">// The element that holds the video and canvas overlay</span>
+  <span class="token comment">// - Will automatically get created and injected into .setup.wrap if null</span>
+  $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// The element to inject the setup wrapper into</span>
+  $parent<span class="token operator">:</span> document<span class="token punctuation">.</span>body
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="models"><a href="#models" class="header-anchor">#</a> Models</h2> <h3 id="hands-2d"><a href="#hands-2d" class="header-anchor">#</a> <code>.hands</code> (2D)</h3> <p>See the <a href="/ref/model/hands/#configuration">Hands Model</a> page</p> <h3 id="handpose-3d"><a href="#handpose-3d" class="header-anchor">#</a> <code>.handpose</code> (3D)</h3> <p>See the <a href="/ref/model/handpose/#configuration">Handpose Model</a> page</p> <h3 id="facemesh"><a href="#facemesh" class="header-anchor">#</a> <code>.facemesh</code></h3> <p>See the <a href="/ref/model/facemesh/#configuration">Facemesh Model</a> page</p> <h3 id="pose"><a href="#pose" class="header-anchor">#</a> <code>.pose</code></h3> <p>See the <a href="/ref/model/pose/#configuration">Pose Model</a> page</p> <h3 id="weboji"><a href="#weboji" class="header-anchor">#</a> <code>.weboji</code></h3> <p>See the <a href="/ref/model/weboji/#configuration">Weboji Model</a> page</p> <h2 id="plugins"><a href="#plugins" class="header-anchor">#</a> Plugins</h2> <p>See the <a href="/ref/plugin/">individual plugin pages</a> for possible configs. Like with models, you can pass in a Boolean to enable/disable them or an object to configure specific properties (don't forget to <code>.enable</code> it if you'd like it enabled):</p> <div class="language-js extra-class"><pre class="language-js"><code>handsfree <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Handsfree</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  hands<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  weboji<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  
+  plugin<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Enable this plugin with defaults</span>
+    facePointer<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Enable this plugin with specific configs</span>
+    pinchScroll<span class="token operator">:</span> <span class="token punctuation">{</span>
+      enabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      speed<span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="the-full-list"><a href="#the-full-list" class="header-anchor">#</a> The Full List</h2> <p>The following is a copy of the actual default object used by Handsfree.js. This page will be better organized, but for now please refer to the defaults below:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * The following are all the defaults
+ * 
+ * @see https://handsfree.js.org/ref/prop/config
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Whether to automatically start or not</span>
+  <span class="token comment">// This works both during instantiation or with .update()</span>
+  autostart<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">// Use CDN by default</span>
+  assetsPath<span class="token operator">:</span> <span class="token string">'https://unpkg.com/handsfree@8.4.3/build/lib/assets'</span><span class="token punctuation">,</span>
+  
+  <span class="token comment">// This will load everything but the models. This is useful when you want to use run inference</span>
+  <span class="token comment">// on another device or context but run the plugins on the current device</span>
+  isClient<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Gesture config</span>
+  gesture<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Setup config. Ignore this to have everything done for you automatically</span>
+  setup<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// The canvas element to use for rendering debug info like skeletons and keypoints</span>
+    canvas<span class="token operator">:</span> <span class="token punctuation">{</span>
+      weboji<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The canvas element to hold the skeletons and keypoints for weboji model</span>
+        $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token number">720</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      hands<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The canvas element to hold the skeletons and keypoints for hand model</span>
+        $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token number">720</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      handpose<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The canvas element to hold the skeletons and keypoints for hand model</span>
+        $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token number">720</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      pose<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The canvas element to hold the skeletons and keypoints for pose model</span>
+        $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token number">720</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      facemesh<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// The canvas element to hold the skeletons and keypoints for facemesh model</span>
+        $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+        width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+        height<span class="token operator">:</span> <span class="token number">720</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// The video source to use. </span>
+    <span class="token comment">// - If not present one will be created and use the webcam</span>
+    <span class="token comment">// - If present without a source then the webcam will be used</span>
+    <span class="token comment">// - If present with a source then that source will be used instead of the webcam</span>
+    video<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// The video element to hold the webcam stream</span>
+      $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      width<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+      height<span class="token operator">:</span> <span class="token number">720</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// The wrapping element</span>
+    wrap<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// The element to put the video and canvas inside of</span>
+      $el<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token comment">// The parent element</span>
+      $parent<span class="token operator">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Weboji model</span>
+  weboji<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    throttle<span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    videoSettings<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// The video, canvas, or image element</span>
+      <span class="token comment">// Omit this to auto create a &lt;VIDEO&gt; with the webcam</span>
+      videoElement<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// ID of the device to use</span>
+      <span class="token comment">// Omit this to use the system default</span>
+      deviceId<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// Which camera to use on the device</span>
+      <span class="token comment">// Possible values: 'user' (front), 'environment' (back)</span>
+      facingMode<span class="token operator">:</span> <span class="token string">'user'</span><span class="token punctuation">,</span>
+
+      <span class="token comment">// Video dimensions</span>
+      idealWidth<span class="token operator">:</span> <span class="token number">320</span><span class="token punctuation">,</span>
+      idealHeight<span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+      minWidth<span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+      maxWidth<span class="token operator">:</span> <span class="token number">1280</span><span class="token punctuation">,</span>
+      minHeight<span class="token operator">:</span> <span class="token number">240</span><span class="token punctuation">,</span>
+      maxHeight<span class="token operator">:</span> <span class="token number">1280</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Thresholds needed before these are considered &quot;activated&quot;</span>
+    <span class="token comment">// - Ranges from 0 (not active) to 1 (fully active)</span>
+    morphs<span class="token operator">:</span> <span class="token punctuation">{</span>
+      threshold<span class="token operator">:</span> <span class="token punctuation">{</span>
+        smileRight<span class="token operator">:</span> <span class="token number">0.7</span><span class="token punctuation">,</span>
+        smileLeft<span class="token operator">:</span> <span class="token number">0.7</span><span class="token punctuation">,</span>
+        browLeftDown<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+        browRightDown<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+        browLeftUp<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+        browRightUp<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+        eyeLeftClosed<span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+        eyeRightClosed<span class="token operator">:</span> <span class="token number">0.4</span><span class="token punctuation">,</span>
+        mouthOpen<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span>
+        mouthRound<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+        upperLip<span class="token operator">:</span> <span class="token number">0.5</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Hands model</span>
+  hands<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// The maximum number of hands to detect [0 - 4]</span>
+    maxNumHands<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Minimum confidence [0 - 1] for a hand to be considered detected</span>
+    minDetectionConfidence<span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Minimum confidence [0 - 1] for the landmark tracker to be considered detected</span>
+    <span class="token comment">// Higher values are more robust at the expense of higher latency</span>
+    minTrackingConfidence<span class="token operator">:</span> <span class="token number">0.5</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Facemesh model</span>
+  facemesh<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token comment">// The maximum number of faces to detect [1 - 4]</span>
+    maxNumFaces<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Minimum confidence [0 - 1] for a face to be considered detected</span>
+    minDetectionConfidence<span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// Minimum confidence [0 - 1] for the landmark tracker to be considered detected</span>
+    <span class="token comment">// Higher values are more robust at the expense of higher latency</span>
+    minTrackingConfidence<span class="token operator">:</span> <span class="token number">0.5</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">// Pose model</span>
+  pose<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// Outputs only the top 25 pose landmarks if true,</span>
+    <span class="token comment">// otherwise shows all 33 full body pose landmarks</span>
+    <span class="token comment">// - Note: Setting this to true may result in better accuracy </span>
+    upperBodyOnly<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Helps reduce jitter over multiple frames if true</span>
+    smoothLandmarks<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Minimum confidence [0 - 1] for a person detection to be considered detected</span>
+    minDetectionConfidence<span class="token operator">:</span> <span class="token number">0.5</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Minimum confidence [0 - 1] for the pose tracker to be considered detected</span>
+    <span class="token comment">// Higher values are more robust at the expense of higher latency</span>
+    minTrackingConfidence<span class="token operator">:</span> <span class="token number">0.5</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  handpose<span class="token operator">:</span> <span class="token punctuation">{</span>
+    enabled<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// The backend to use: 'webgl' or 'wasm'</span>
+    <span class="token comment">// 🚨 Currently only webgl is supported</span>
+    backend<span class="token operator">:</span> <span class="token string">'webgl'</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// How many frames to go without running the bounding box detector. </span>
+    <span class="token comment">// Set to a lower value if you want a safety net in case the mesh detector produces consistently flawed predictions.</span>
+    maxContinuousChecks<span class="token operator">:</span> <span class="token number">Infinity</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Threshold for discarding a prediction</span>
+    detectionConfidence<span class="token operator">:</span> <span class="token number">0.8</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// A float representing the threshold for deciding whether boxes overlap too much in non-maximum suppression. Must be between [0, 1]</span>
+    iouThreshold<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// A threshold for deciding when to remove boxes based on score in non-maximum suppression.</span>
+    scoreThreshold<span class="token operator">:</span> <span class="token number">0.75</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  plugin<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/midiblocks/handsfree/edit/master/docs/ref/prop/config.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/7/2021, 11:49:35 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/ref/prop/" class="prev router-link-active">
+        🧬 Properties
+      </a></span> <span class="next"><a href="/ref/prop/data.html">
+        .data
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><div id="handsfree-container"><div id="handsfree-debugger"></div><div id="navbar-handsfree-toggle"><a href="https://github.com/midiblocks/handsfree"><img src="/branding/github.png" height="28" style="vertical-align: middle"></a><div class="block-children handsfree-show-when-started"><button class="handsfree-show-when-stopped handsfree-hide-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-video fa-w-18"><path fill="currentColor" d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg></span><span>Activate Handsfree Mode</span></button><button disabled="disabled" class="handsfree-show-when-loading"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg></span><span>Loading...</span></button><button class="handsfree-hide-when-loading handsfree-show-when-started negative"><span><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="video-slash" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-video-slash fa-w-20"><path fill="currentColor" d="M633.8 458.1l-55-42.5c15.4-1.4 29.2-13.7 29.2-31.1v-257c0-25.5-29.1-40.4-50.4-25.8L448 177.3v137.2l-32-24.7v-178c0-26.4-21.4-47.8-47.8-47.8H123.9L45.5 3.4C38.5-2 28.5-.8 23 6.2L3.4 31.4c-5.4 7-4.2 17 2.8 22.4L42.7 82 416 370.6l178.5 138c7 5.4 17 4.2 22.5-2.8l19.6-25.3c5.5-6.9 4.2-17-2.8-22.4zM32 400.2c0 26.4 21.4 47.8 47.8 47.8h288.4c11.2 0 21.4-4 29.6-10.5L32 154.7v245.5z"></path></svg></span><span>Stop Handsfree</span></button></div></div><div id="handsfree-debug-window" class="window window-component mb-md handsfree-show-when-started handsfree-hide-when-not-debugging mb-0"><div class="title-bar"><div class="title-bar-text">Debugger</div><div class="title-bar-controls"><button aria-label="Minimize"></button><button aria-label="Restore"></button><button aria-label="Maximize"></button></div></div><div class="window-body"></div></div></div></div></div>
+    <script src="/assets/js/app.fae53dde.js" defer></script><script src="/assets/js/3.0342f08e.js" defer></script><script src="/assets/js/74.2b3cbd4b.js" defer></script><script src="/assets/js/17.1f759e5b.js" defer></script><script src="/assets/js/22.ab4f3762.js" defer></script><script src="/assets/js/20.62e72976.js" defer></script><script src="/assets/js/19.5a90037f.js" defer></script><script src="/assets/js/21.5fd56aec.js" defer></script><script src="/assets/js/24.2ec3eba9.js" defer></script>
+  </body>
+</html>

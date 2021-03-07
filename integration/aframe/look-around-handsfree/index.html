@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene fog="type: exponential; color: #000; far: 30; density: 0.075">
+      <a-assets>
+        <img src="./grid.png" id="grid">
+      </a-assets>
+      
+      <a-entity id="rig" position="0 1 -5">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <!-- Walls -->
+      <!-- Bottom -->
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0" position="0 -2 0"
+        material="src: #grid; repeat: 10000 10000;"></a-entity>
+      <!-- Top -->
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="90 0 0" position="0 7 0"
+        material="src: #grid; repeat: 10000 10000;"></a-entity>
+      <!-- Right -->
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="0 -90 0" position="8 0 0"
+        material="src: #grid; repeat: 10000 10000;"></a-entity>
+      <!-- Left -->
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="0 90 0" position="-8 0 0"
+        material="src: #grid; repeat: 10000 10000;"></a-entity>
+      <!-- Back -->
+      <a-entity
+        geometry="primitive: plane; width: 10000; height: 10000;" rotation="0 0 0" position="0 0 -15"
+        material="src: #grid; repeat: 10000 10000;"></a-entity>
+
+      <a-entity light="color: #000; intensity: 1; type: ambient;" visible=""></a-entity>
+      <a-entity light="color: #000; intensity: 1.5" position="5 5 5"></a-entity>
+      <a-entity light="color: #000; intensity: 0.5" position="-5 5 15"></a-entity>
+      <a-entity light="color: #aaa; type: ambient;"></a-entity>
+    </a-scene>
+    
+    <!-- Notify parent of the ready state -->
+    <script>
+      parent.postMessage('aframeReady')
+    </script>
+  </body>
+</html>

@@ -1,0 +1,478 @@
+/* Debugger */
+.handsfree-debugger,
+.handsfree-video,
+.handsfree-canvas {
+  display: none;
+}
+.handsfree-started.handsfree-show-debug .handsfree-debugger,
+.handsfree-started.handsfree-show-debug .handsfree-canvas {
+  display: block;
+}
+
+.handsfree-started.handsfree-show-debug .handsfree-show-when-debugging {display: block}
+.handsfree-started.handsfree-show-debug .handsfree-hide-when-debugging {display: none}
+
+body.handsfree-started.handsfree-hide-debug .handsfree-show-when-not-debugging {display: block}
+body.handsfree-started.handsfree-hide-debug .handsfree-hide-when-not-debugging {display: none}
+
+/* Debug */
+.handsfree-debugger {
+  position: relative;
+}
+.handsfree-canvas,
+.handsfree-video {
+  width: auto;
+  height: auto;
+  transform: scale(-1, 1);
+}
+.handsfree-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.handsfree-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: auto !important;
+}
+.handsfree-canvas:last-child {
+  position: relative;
+}
+.handsfree-canvas-webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  margin-left: 50%;
+  transform: translate(-50%) scale(-1, 1);
+}
+
+/* Loading States */
+.handsfree-show-when-loading {
+  display: none;
+}
+.handsfree-loading .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-loading .handsfree-show-when-loading {
+  display: block;
+}
+.handsfree-loading a.handsfree-show-when-loading,
+.handsfree-loading button.handsfree-show-when-loading,
+.handsfree-loading span.handsfree-show-when-loading {
+  display: inline-block;
+}
+
+/* Started/stop states */
+.handsfree-stop {
+  display: none;
+}
+.handsfree-started .handsfree-start {
+  display: none;
+}
+.handsfree-started .handsfree-stop {
+  display: block;
+}
+.handsfree-started a.handsfree-stop,
+.handsfree-started button.handsfree-stop,
+.handsfree-started span.handsfree-stop {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-stopped {
+  display: none;
+}
+.handsfree-show-when-started {
+  display: none;
+}
+.handsfree-started .handsfree-show-when-started {
+  display: initial;
+}
+.handsfree-loading .handsfree-show-when-loading {
+  display: initial;
+}
+
+/* Pointer */
+.handsfree-pointer {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background: #f00;
+  border: 3px solid #f00;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  opacity: 1;
+  transition: opacity 0.35s ease;
+  display: none;
+}
+.handsfree-pointer-hidden {
+  opacity: 0;
+}
+.handsfree-calibrating .handsfree-pointer.handsfree-pointer-hidden {
+  opacity: 1;
+}
+.handsfree-scroll-focus {
+  outline: 3px solid #f00;
+}
+.handsfree-started.handsfree-model-weboji .handsfree-pointer-face {
+  display: block;
+}
+.handsfree-hidden {
+  display: none !important;
+}
+
+
+/* Weboji */
+.handsfree-started .handsfree-hide-when-started-without-weboji {
+  display: none;
+}
+.handsfree-started.handsfree-model-weboji .handsfree-hide-when-started-without-weboji {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-started-without-weboji {
+  display: inline-block;
+}
+.handsfree-show-when-started-without-weboji,
+.handsfree-started.handsfree-model-weboji .handsfree-show-when-started-without-weboji {
+  display: none;
+}
+.handsfree-hide-when-started-without-weboji + .handsfree-show-when-loading,
+.handsfree-loading .handsfree-show-when-started-without-weboji + .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-started.handsfree-loading .handsfree-hide-when-started-without-weboji + .handsfree-show-when-started-without-weboji {
+  display: inline-block !important;
+}
+
+/* Hands */
+.handsfree-started .handsfree-hide-when-started-without-hands {
+  display: none;
+}
+.handsfree-started.handsfree-model-hands .handsfree-hide-when-started-without-hands {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-started-without-hands {
+  display: inline-block;
+}
+.handsfree-show-when-started-without-hands,
+.handsfree-started.handsfree-model-hands .handsfree-show-when-started-without-hands {
+  display: none;
+}
+.handsfree-hide-when-started-without-hands + .handsfree-show-when-loading,
+.handsfree-loading .handsfree-show-when-started-without-hands + .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-started.handsfree-loading .handsfree-hide-when-started-without-hands + .handsfree-show-when-started-without-hands {
+  display: inline-block !important;
+}
+
+/* Handpose */
+.handsfree-started .handsfree-hide-when-started-without-handpose {
+  display: none;
+}
+.handsfree-started.handsfree-model-handpose .handsfree-hide-when-started-without-handpose {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-started-without-handpose {
+  display: inline-block;
+}
+.handsfree-show-when-started-without-handpose,
+.handsfree-started.handsfree-model-handpose .handsfree-show-when-started-without-handpose {
+  display: none;
+}
+.handsfree-hide-when-started-without-handpose + .handsfree-show-when-loading,
+.handsfree-loading .handsfree-show-when-started-without-handpose + .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-started.handsfree-loading .handsfree-hide-when-started-without-handpose + .handsfree-show-when-started-without-handpose {
+  display: inline-block !important;
+}
+
+/* Facemesh */
+.handsfree-started .handsfree-hide-when-started-without-facemesh {
+  display: none;
+}
+.handsfree-started.handsfree-model-facemesh .handsfree-hide-when-started-without-facemesh {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-started-without-facemesh {
+  display: inline-block;
+}
+.handsfree-show-when-started-without-facemesh,
+.handsfree-started.handsfree-model-facemesh .handsfree-show-when-started-without-facemesh {
+  display: none;
+}
+.handsfree-hide-when-started-without-facemesh + .handsfree-show-when-loading,
+.handsfree-loading .handsfree-show-when-started-without-facemesh + .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-started.handsfree-loading .handsfree-hide-when-started-without-facemesh + .handsfree-show-when-started-without-facemesh {
+  display: inline-block !important;
+}
+
+/* Pose */
+.handsfree-started .handsfree-hide-when-started-without-pose {
+  display: none;
+}
+.handsfree-started.handsfree-model-pose .handsfree-hide-when-started-without-pose {
+  display: inline-block;
+}
+.handsfree-started .handsfree-show-when-started-without-pose {
+  display: inline-block;
+}
+.handsfree-show-when-started-without-pose,
+.handsfree-started.handsfree-model-pose .handsfree-show-when-started-without-pose {
+  display: none;
+}
+.handsfree-hide-when-started-without-pose + .handsfree-show-when-loading,
+.handsfree-loading .handsfree-show-when-started-without-pose + .handsfree-hide-when-loading {
+  display: none !important;
+}
+.handsfree-started.handsfree-loading .handsfree-hide-when-started-without-pose + .handsfree-show-when-started-without-pose {
+  display: inline-block !important;
+}
+
+/* Click animation */
+body.handsfree-clicked .handsfree-pointer {
+  background: #ff0;
+  animation: shadow-pulse 0.15s 1;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 15px rgba(255, 0, 0, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 75px rgba(255, 0, 0, 0);
+  }
+}
+
+/* ## SPECIFIC HAND */
+/* Finger Pinchers */
+/* Index Left */
+body:not(.handsfree-finger-pinched-0-0) .handsfree-hide-when-finger-pinched-0-0 {
+  display: block;
+}
+body.handsfree-finger-pinched-0-0 .handsfree-hide-when-finger-pinched-0-0 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0-0) .handsfree-show-when-finger-pinched-0-0 {
+  display: none;
+}
+body.handsfree-finger-pinched-0-0 .handsfree-show-when-finger-pinched-0-0 {
+  display: block;
+}
+/* Index Right */
+body:not(.handsfree-finger-pinched-1-0) .handsfree-hide-when-finger-pinched-1-0 {
+  display: block;
+}
+body.handsfree-finger-pinched-1-0 .handsfree-hide-when-finger-pinched-1-0 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1-0) .handsfree-show-when-finger-pinched-1-0 {
+  display: none;
+}
+body.handsfree-finger-pinched-1-0 .handsfree-show-when-finger-pinched-1-0 {
+  display: block;
+}
+
+/* Middle Left */
+body:not(.handsfree-finger-pinched-0-1) .handsfree-hide-when-finger-pinched-0-1 {
+  display: block;
+}
+body.handsfree-finger-pinched-0-1 .handsfree-hide-when-finger-pinched-0-1 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0-1) .handsfree-show-when-finger-pinched-0-1 {
+  display: none;
+}
+body.handsfree-finger-pinched-0-1 .handsfree-show-when-finger-pinched-0-1 {
+  display: block;
+}
+/* Middle Right */
+body:not(.handsfree-finger-pinched-1-1) .handsfree-hide-when-finger-pinched-1-1 {
+  display: block;
+}
+body.handsfree-finger-pinched-1-1 .handsfree-hide-when-finger-pinched-1-1 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1-1) .handsfree-show-when-finger-pinched-1-1 {
+  display: none;
+}
+body.handsfree-finger-pinched-1-1 .handsfree-show-when-finger-pinched-1-1 {
+  display: block;
+}
+
+
+/* Ring Left */
+body:not(.handsfree-finger-pinched-0-2) .handsfree-hide-when-finger-pinched-0-2 {
+  display: block;
+}
+body.handsfree-finger-pinched-0-2 .handsfree-hide-when-finger-pinched-0-2 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0-2) .handsfree-show-when-finger-pinched-0-2 {
+  display: none;
+}
+body.handsfree-finger-pinched-0-2 .handsfree-show-when-finger-pinched-0-2 {
+  display: block;
+}
+/* Ring Right */
+body:not(.handsfree-finger-pinched-1-2) .handsfree-hide-when-finger-pinched-1-2 {
+  display: block;
+}
+body.handsfree-finger-pinched-1-2 .handsfree-hide-when-finger-pinched-1-2 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1-2) .handsfree-show-when-finger-pinched-1-2 {
+  display: none;
+}
+body.handsfree-finger-pinched-1-2 .handsfree-show-when-finger-pinched-1-2 {
+  display: block;
+}
+
+
+/* Pinky Left */
+body:not(.handsfree-finger-pinched-0-3) .handsfree-hide-when-finger-pinched-0-3 {
+  display: block;
+}
+body.handsfree-finger-pinched-0-3 .handsfree-hide-when-finger-pinched-0-3 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0-3) .handsfree-show-when-finger-pinched-0-3 {
+  display: none;
+}
+body.handsfree-finger-pinched-0-3 .handsfree-show-when-finger-pinched-0-3 {
+  display: block;
+}
+/* Pinky Right */
+body:not(.handsfree-finger-pinched-1-3) .handsfree-hide-when-finger-pinched-1-3 {
+  display: block;
+}
+body.handsfree-finger-pinched-1-3 .handsfree-hide-when-finger-pinched-1-3 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1-3) .handsfree-show-when-finger-pinched-1-3 {
+  display: none;
+}
+body.handsfree-finger-pinched-1-3 .handsfree-show-when-finger-pinched-1-3 {
+  display: block;
+}
+
+/* ## ANY HAND */
+/* Finger Pinchers */
+/* Index Left */
+body:not(.handsfree-finger-pinched-0) .handsfree-hide-when-finger-pinched-0 {
+  display: block;
+}
+body.handsfree-finger-pinched-0 .handsfree-hide-when-finger-pinched-0 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0) .handsfree-show-when-finger-pinched-0 {
+  display: none;
+}
+body.handsfree-finger-pinched-0 .handsfree-show-when-finger-pinched-0 {
+  display: block;
+}
+/* Index Right */
+body:not(.handsfree-finger-pinched-0) .handsfree-hide-when-finger-pinched-0 {
+  display: block;
+}
+body.handsfree-finger-pinched-0 .handsfree-hide-when-finger-pinched-0 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-0) .handsfree-show-when-finger-pinched-0 {
+  display: none;
+}
+body.handsfree-finger-pinched-0 .handsfree-show-when-finger-pinched-0 {
+  display: block;
+}
+
+/* Middle Left */
+body:not(.handsfree-finger-pinched-1) .handsfree-hide-when-finger-pinched-1 {
+  display: block;
+}
+body.handsfree-finger-pinched-1 .handsfree-hide-when-finger-pinched-1 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1) .handsfree-show-when-finger-pinched-1 {
+  display: none;
+}
+body.handsfree-finger-pinched-1 .handsfree-show-when-finger-pinched-1 {
+  display: block;
+}
+/* Middle Right */
+body:not(.handsfree-finger-pinched-1) .handsfree-hide-when-finger-pinched-1 {
+  display: block;
+}
+body.handsfree-finger-pinched-1 .handsfree-hide-when-finger-pinched-1 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-1) .handsfree-show-when-finger-pinched-1 {
+  display: none;
+}
+body.handsfree-finger-pinched-1 .handsfree-show-when-finger-pinched-1 {
+  display: block;
+}
+
+
+/* Ring Left */
+body:not(.handsfree-finger-pinched-2) .handsfree-hide-when-finger-pinched-2 {
+  display: block;
+}
+body.handsfree-finger-pinched-2 .handsfree-hide-when-finger-pinched-2 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-2) .handsfree-show-when-finger-pinched-2 {
+  display: none;
+}
+body.handsfree-finger-pinched-2 .handsfree-show-when-finger-pinched-2 {
+  display: block;
+}
+/* Ring Right */
+body:not(.handsfree-finger-pinched-2) .handsfree-hide-when-finger-pinched-2 {
+  display: block;
+}
+body.handsfree-finger-pinched-2 .handsfree-hide-when-finger-pinched-2 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-2) .handsfree-show-when-finger-pinched-2 {
+  display: none;
+}
+body.handsfree-finger-pinched-2 .handsfree-show-when-finger-pinched-2 {
+  display: block;
+}
+
+
+/* Pinky Left */
+body:not(.handsfree-finger-pinched-3) .handsfree-hide-when-finger-pinched-3 {
+  display: block;
+}
+body.handsfree-finger-pinched-3 .handsfree-hide-when-finger-pinched-3 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-3) .handsfree-show-when-finger-pinched-3 {
+  display: none;
+}
+body.handsfree-finger-pinched-3 .handsfree-show-when-finger-pinched-3 {
+  display: block;
+}
+/* Pinky Right */
+body:not(.handsfree-finger-pinched-3) .handsfree-hide-when-finger-pinched-3 {
+  display: block;
+}
+body.handsfree-finger-pinched-3 .handsfree-hide-when-finger-pinched-3 {
+  display: none;
+}
+body:not(.handsfree-finger-pinched-3) .handsfree-show-when-finger-pinched-3 {
+  display: none;
+}
+body.handsfree-finger-pinched-3 .handsfree-show-when-finger-pinched-3 {
+  display: block;
+}
+
